@@ -1,0 +1,82 @@
+        <html>
+        <head>
+            <link href="style.css" rel="stylesheet" >
+        </head>
+        <body>
+
+    <div id="endGameMsg"  ></div>
+         
+            <div id="con">
+
+                <div id="computer">
+                    <div style="display:block; margin:auto;">
+                        <span class="howsTurn" id="computerTurn">Your Turn=></span>
+
+                        <label id="computerScore" class="headLine">Computer Player</label>
+                    </div>
+                <div id="computerCards">
+                    
+                </div>
+                </div>
+
+                <div id="middle">
+
+                    <div  id="leftMain">
+
+
+                        <div id="HeapAndMsgDiv">
+                            <div id="msg" class="instarction">Please choose a color</div>
+                            <div class="midLablRight">Heap
+                                <div id="left1">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="rightMain">
+                      <div id="right">
+                       <div class="midLablRight">Deck</div>
+                       <img id="deck" src="img/blank_card.png " onclick="userClickOnDeck()"> 
+                   </div>
+               </div>
+           </div><!-- !---middel -->
+
+           <div id="human">
+              <div style="display:block; margin:auto;">
+                <span class="howsTurn" id="humanTurn">Your Turn => </span>
+                <label id="humanScore" class="headLine" >Me </label>
+            </div>
+             <div id="humanCards">
+                    
+                 </div>
+            <div id="selector" class="card" >
+                <div class="half-containers" onclick="userQuit()">Quit</div>  
+                <div id="closetaki" class="half-containers" onclick="userClickOnCloseTaki()">Close Taki</div> 
+                
+            </div>
+           
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div id="resetGame" class="startAgain"  style="display:none;" onclick="initGame()">Start Again</div>
+        <div id="statsTotalTurns" class="stats">Total turns<span id="statsTotalTurnsValue"></span></div>
+        <div id="statsGameDuration" class="stats">Game duration (in sec)<span id="statsGameDurationValue"></span></div>
+        <div id="statsAverageGamePlay" class="stats">Average time for game play (in sec)<span id="statsAverageGamePlayValue"></span></div>
+        <div id="statsTimesWithSingle"class="stats">Times with single card<span id="statsTimesWithSingleValue"></span></div>
+
+    </div>
+
+
+    <script src="game.js" type="text/javascript"></script>
+
+
+</body>
+
+
+</html>
